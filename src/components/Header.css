@@ -53,3 +53,15 @@
 .hidden {
   display: none;
 }
+.navbar ul li :link {
+  text-decoration: none;
+  outline: 0;
+  color: inherit;
+  cursor: auto;
+}
+.navbar ul li :visited {
+  text-decoration: none;
+  outline: 0;
+  color: inherit;
+  cursor: auto;
+}

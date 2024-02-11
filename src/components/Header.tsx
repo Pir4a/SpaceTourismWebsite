@@ -3,6 +3,7 @@ import logo from "../assets/shared/logo.svg"
 import openmenu from "../assets/shared/icon-hamburger.svg"
 import closemenu from "../assets/shared/icon-close.svg"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -31,16 +32,24 @@ function Header() {
         <nav className="navbar">
           <ul>
             <li>
-              <span>00</span> HOME
+              <Link to="/">
+                <span>00</span> HOME
+              </Link>
             </li>
             <li>
-              <span>01</span> DESTINATION
+              <Link to="/destination">
+                <span>01</span> DESTINATION
+              </Link>
             </li>
             <li>
-              <span>02</span> CREW
+              <Link to="/crew">
+                <span>02</span> CREW
+              </Link>
             </li>
             <li>
-              <span>03</span> TECHNOLOGY
+              <Link to="/technology">
+                <span>03</span> TECHNOLOGY
+              </Link>
             </li>
           </ul>
         </nav>
