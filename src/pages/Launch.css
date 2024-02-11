@@ -1,0 +1,6 @@
+.launchimgcontainer {
+  display: flex;
+  height: 170px;
+  object-fit: fill;
+  justify-content: center;
+}

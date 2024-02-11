@@ -3,6 +3,8 @@ import "./App.css"
 import Header from "./components/Header"
 import Home from "./pages/Home"
 import Destination from "./pages/Destination"
+import Crew from "./pages/Crew"
+import Launch from "./pages/Launch"
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/destination" element={<Destination />} />
+        <Route path="/crew" element={<Crew />} />
+        <Route path="/technology" element={<Launch />} />
       </Routes>
     </>
   )

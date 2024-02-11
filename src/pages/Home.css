@@ -29,6 +29,7 @@
   font-weight: normal;
 }
 .hero p {
+  font-family: "Barlow", sans-serif;
   font-size: 15px;
   line-height: 25px;
   color: #d0d6f9;
