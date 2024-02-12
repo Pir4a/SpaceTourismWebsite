@@ -32,23 +32,59 @@ function Header() {
         <nav className="navbar">
           <ul>
             <li>
-              <Link to="/">
-                <span>00</span> HOME
+              <Link
+                to="/"
+                style={{
+                  cursor: "pointer",
+                  height: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "11px",
+                }}
+              >
+                <span>00</span> <p>HOME</p>
               </Link>
             </li>
             <li>
-              <Link to="/destination">
-                <span>01</span> DESTINATION
+              <Link
+                to="/destination"
+                style={{
+                  cursor: "pointer",
+                  height: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "11px",
+                }}
+              >
+                <span>01</span> <p>DESTINATION</p>
               </Link>
             </li>
             <li>
-              <Link to="/crew">
-                <span>02</span> CREW
+              <Link
+                to="/crew"
+                style={{
+                  cursor: "pointer",
+                  height: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "11px",
+                }}
+              >
+                <span>02</span> <p>CREW</p>
               </Link>
             </li>
             <li>
-              <Link to="/technology">
-                <span>03</span> TECHNOLOGY
+              <Link
+                to="/technology"
+                style={{
+                  cursor: "pointer",
+                  height: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "11px",
+                }}
+              >
+                <span>03</span> <p>TECHNOLOGY</p>
               </Link>
             </li>
           </ul>
