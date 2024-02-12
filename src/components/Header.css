@@ -35,7 +35,9 @@
   letter-spacing: 2.7px;
   padding-left: 32px;
 }
-
+.navbar a {
+  width: 100%;
+}
 .navbar > ul > li {
   display: flex;
   align-items: center;

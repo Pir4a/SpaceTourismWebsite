@@ -1,6 +1,46 @@
 .launchimgcontainer {
+  margin-top: 32px;
   display: flex;
   height: 170px;
+  width: 100%;
   object-fit: fill;
+}
+.launchimgcontainer img {
+  display: block;
+  width: 100%;
+}
+.navcircles {
+  margin-top: 34px;
+}
+.navcircles ul {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.navcircles ul li {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bellefair", serif;
+}
+.navcircles ul li:hover {
+  background-color: white;
+  color: #0b0d17;
+}
+
+.tech h4 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  color: #d0d6f9;
+}
+.techdescription {
+  color: #d0d6f9;
 }
