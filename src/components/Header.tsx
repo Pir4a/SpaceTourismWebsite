@@ -19,7 +19,9 @@ function Header() {
             setIsMenuOpen(!isMenuOpen)
           }}
         />
+        <span className="line">f</span>
       </div>
+
       <div
         className={isMenuOpen ? "navbarcontainer" : "navbarcontainer hidden"}
       >

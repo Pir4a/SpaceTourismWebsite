@@ -47,7 +47,7 @@ function Destination() {
         <h2>{data.destinations[planet].distance.toUpperCase()}</h2>
       </div>
       <div className="destination-traveltime">
-        <h3>EST. TRAVEL TIMEE</h3>
+        <h3>EST. TRAVEL TIME</h3>
         <h2>{data.destinations[planet].travel.toUpperCase()}</h2>
       </div>
     </div>

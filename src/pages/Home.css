@@ -2,7 +2,9 @@
   font-family: "Barlow", sans-serif;
   color: white;
 }
-
+.bgdesktop {
+  display: none;
+}
 .hero {
   height: 276px;
   margin-top: 24px;
@@ -60,4 +62,53 @@
   font-family: "Bellefair", serif;
   letter-spacing: 1.25px;
   font-size: 20px;
+}
+@media (width>800px) {
+  .homecontainer {
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80dvh;
+  }
+  .bgdesktop {
+    display: block;
+  }
+  .hero {
+    max-width: 450px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    text-align: left;
+    margin-inline: auto;
+  }
+  .hero h2 {
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    margin-left: -50px;
+  }
+  .hero h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 172px;
+    font-size: 150px;
+  }
+  .hero p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .circle {
+    width: 274px;
+    height: 274px;
+  }
+  .circle p {
+    color: #0b0d17;
+    font-family: "Bellefair", serif;
+    letter-spacing: 2px;
+    font-size: 32px;
+  }
 }

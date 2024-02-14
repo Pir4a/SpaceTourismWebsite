@@ -1,10 +1,12 @@
 import backgroundmobile from "../assets/home/background-home-mobile.jpg"
+import backgroundesktop from "../assets/home/background-home-desktop.jpg"
 import "./Home.css"
 
 function Home() {
   return (
     <div className="homecontainer">
       <img src={backgroundmobile} />
+      <img className="bgdesktop" src={backgroundesktop} />
       <div className="hero">
         <h2>SO, YOU WANT TO TRAVEL TO</h2>
         <h1>SPACE</h1>
