@@ -150,6 +150,10 @@
     border-right: 0px solid white;
     border-bottom: 4px solid white;
   }
+  .navbar > ul > li:focus {
+    border-right: 0px solid white;
+    border-bottom: 4px solid white;
+  }
 }
 @media (width>1100px) {
   .line {

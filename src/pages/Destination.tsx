@@ -14,11 +14,12 @@ function Destination() {
     <div className="destinationcontainer">
       <img className="background" src={destinationbg} />
       <img className="background bgdesktop" src={destinationbgdesktop} />
+
+      <div className="step">
+        <h3>01</h3>
+        <h2>PICK YOUR DESTINATION</h2>
+      </div>
       <div className="leftcontainer">
-        <div className="step">
-          <h3>01</h3>
-          <h2>PICK YOUR DESTINATION</h2>
-        </div>
         <div className="planetcontainer">
           <img
             className="planetimage"
@@ -37,10 +38,18 @@ function Destination() {
       <div className="rightcontainer">
         <div className="planets">
           <ul>
-            <li onClick={() => setPlanet(0)}>MOON</li>
-            <li onClick={() => setPlanet(1)}>MARS</li>
-            <li onClick={() => setPlanet(2)}>EUROPA</li>
-            <li onClick={() => setPlanet(3)}>TITAN</li>
+            <li className="target" onClick={() => setPlanet(0)}>
+              MOON
+            </li>
+            <li className="target" onClick={() => setPlanet(1)}>
+              MARS
+            </li>
+            <li className="target" onClick={() => setPlanet(2)}>
+              EUROPA
+            </li>
+            <li className="target" onClick={() => setPlanet(3)}>
+              TITAN
+            </li>
           </ul>
         </div>
         <div className="destination">
