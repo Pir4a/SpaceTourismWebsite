@@ -23,6 +23,7 @@
 }
 
 .oval {
+  cursor: pointer;
   width: 10px;
   height: 10px;
   background-color: rgba(255, 255, 255, 0.174);
@@ -62,9 +63,171 @@
   align-items: center;
   text-align: center;
   font-family: "Barlow", serif;
-  color: white;
+
   line-height: 25px;
   font-size: 15px;
   font-weight: normal;
   color: #d0d6f9;
+}
+@media (width>1300px) {
+  .crewcontainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .commanderimgcontainer {
+    padding-top: 3%;
+    height: 4000px;
+    width: 600px;
+    border-bottom: 0px solid #383b4b;
+  }
+  .commanderimg {
+    margin-left: 0;
+    object-fit: scale-down;
+    margin-top: 0;
+    height: 400px;
+  }
+
+  .slider {
+    margin-top: 0px;
+    bottom: -70px;
+    left: 0;
+    position: absolute;
+  }
+  .slider ul {
+    gap: 24px;
+  }
+
+  .oval {
+    width: 15px;
+    height: 15px;
+  }
+
+  .commandername {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+
+    margin-top: 32px;
+  }
+  .commandername h4 {
+    font-size: 32px;
+  }
+  .commandername h3 {
+    padding-top: 15px;
+    font-size: 56px;
+    min-width: 620px;
+  }
+  .commanderdescription {
+    margin-inline: 0;
+    margin-top: 27px;
+    max-width: 444px;
+    font-family: "Barlow", serif;
+    line-height: 32px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #d0d6f9;
+    text-align: left;
+  }
+  .crewrightcontainer {
+    margin-top: 270px;
+    position: relative;
+    margin-bottom: 120px;
+    min-height: 350px;
+  }
+}
+@media (width>800px) {
+  .crewcontainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .commanderimgcontainer {
+    padding-top: 3%;
+    height: 100%;
+    width: 600px;
+    border-bottom: 0px solid #383b4b;
+  }
+  .commanderimg {
+    margin-left: 0;
+    object-fit: scale-down;
+    margin-top: 0;
+    height: auto;
+  }
+
+  .slider {
+    margin-top: 0px;
+    bottom: -70px;
+    left: 0;
+    position: absolute;
+  }
+  .slider ul {
+    gap: 24px;
+  }
+
+  .oval {
+    width: 15px;
+    height: 15px;
+  }
+
+  .commandername {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+
+    margin-top: 32px;
+  }
+  .commandername h4 {
+    font-size: 32px;
+  }
+  .commandername h3 {
+    padding-top: 15px;
+    font-size: 56px;
+    min-width: 620px;
+  }
+  .commanderdescription {
+    margin-inline: 0;
+    margin-top: 27px;
+    max-width: 444px;
+    font-family: "Barlow", serif;
+    line-height: 32px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #d0d6f9;
+    text-align: left;
+  }
+  .crewrightcontainer {
+    margin-top: 270px;
+    position: relative;
+    margin-bottom: 120px;
+    min-height: 350px;
+  }
+  .commanderimgcontainer {
+    padding-top: 200px;
+    border-bottom: 0px solid #383b4b;
+  }
+  .commanderimg {
+    margin-left: 0;
+    object-fit: scale-down;
+    margin-top: 0;
+
+    height: 420px;
+    width: 390px;
+  }
+  .commandername h3 {
+    padding-top: 15px;
+    font-size: 56px;
+    min-width: 0px;
+  }
+  .crewrightcontainer {
+    margin-left: 50px;
+    margin-top: 200px;
+    min-height: 450px;
+  }
 }
