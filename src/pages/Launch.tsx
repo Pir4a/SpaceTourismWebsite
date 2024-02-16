@@ -1,8 +1,12 @@
 import "./Launch.css"
 import launchbgmobile from "../assets/technology/background-technology-mobile.jpg"
+import launchbgdesktop from "../assets/technology/background-technology-desktop.jpg"
 import launch from "../assets/technology/image-launch-vehicle-landscape.jpg"
 import spaceport from "../assets/technology/image-spaceport-landscape.jpg"
 import spacecapsule from "../assets/technology/image-space-capsule-landscape.jpg"
+import launchdesktop from "../assets/technology/image-launch-vehicle-portrait.jpg"
+import spaceportdesktop from "../assets/technology/image-spaceport-portrait.jpg"
+import spacecapsuledesktop from "../assets/technology/image-space-capsule-portrait.jpg"
 import { useState } from "react"
 import data from "../data.json"
 
@@ -11,11 +15,12 @@ function Launch() {
   return (
     <div className="launchcontainer">
       <img className="background" src={launchbgmobile} />
+      <img className="background bgdesktop" src={launchbgdesktop} />
       <div className="step">
         <h3>03</h3>
         <h2>SPACE LAUNCH 101</h2>
       </div>
-      <div className="launchimgcontainer">
+      <div className="launchimgcontainer mobile">
         <img
           src={
             technology == 0
@@ -26,25 +31,38 @@ function Launch() {
           }
         />
       </div>
-      <div className="navcircles">
-        <ul>
-          <li className="navcircle" onClick={() => setTechnology(0)}>
-            1
-          </li>
-          <li className="navcircle" onClick={() => setTechnology(1)}>
-            2
-          </li>
-          <li className="navcircle" onClick={() => setTechnology(2)}>
-            3
-          </li>
-        </ul>
+      <div className="launchimgcontainer desktop">
+        <img
+          src={
+            technology == 0
+              ? launchdesktop
+              : technology == 1
+              ? spaceportdesktop
+              : spacecapsuledesktop
+          }
+        />
       </div>
-      <div className="commandername tech">
-        <h4>THE TERMINOLOGY</h4>
-        <h3>{data.technology[technology].name.toUpperCase()}</h3>
-      </div>
-      <div className="commanderdescription techdescription">
-        <p>{data.technology[technology].description}</p>
+      <div className="leftcontainertechnology">
+        <div className="navcircles">
+          <ul>
+            <li className="navcircle" onClick={() => setTechnology(0)}>
+              1
+            </li>
+            <li className="navcircle" onClick={() => setTechnology(1)}>
+              2
+            </li>
+            <li className="navcircle" onClick={() => setTechnology(2)}>
+              3
+            </li>
+          </ul>
+        </div>
+        <div className="commandername tech">
+          <h4>THE TERMINOLOGY</h4>
+          <h3>{data.technology[technology].name.toUpperCase()}</h3>
+        </div>
+        <div className="commanderdescription techdescription">
+          <p>{data.technology[technology].description}</p>
+        </div>
       </div>
     </div>
   )

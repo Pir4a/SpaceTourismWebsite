@@ -15,7 +15,7 @@ function Crew() {
     <div className="crewcontainer">
       <img className="background" src={crewbgmobile} />
       <img className="background bgdesktop full" src={crewbgdesktop} />
-      <div className="step">
+      <div className="step two">
         <h3>02</h3>
         <h2>MEET YOUR CREW</h2>
       </div>

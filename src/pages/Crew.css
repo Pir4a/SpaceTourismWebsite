@@ -72,6 +72,9 @@
 }
 
 @media (width>800px) {
+  .two {
+    right: 409px;
+  }
   .full {
     min-height: 850px;
   }
@@ -163,7 +166,7 @@
     min-width: 0px;
   }
   .crewrightcontainer {
-    margin-left: 50px;
+    margin-left: 165px;
     margin-top: 200px;
     min-height: 450px;
   }
