@@ -14,7 +14,7 @@ function Crew() {
   return (
     <div className="crewcontainer">
       <img className="background" src={crewbgmobile} />
-      <img className="background bgdesktop" src={crewbgdesktop} />
+      <img className="background bgdesktop full" src={crewbgdesktop} />
       <div className="step">
         <h3>02</h3>
         <h2>MEET YOUR CREW</h2>
