@@ -16,7 +16,7 @@ function Launch() {
     <div className="launchcontainer">
       <img className="background" src={launchbgmobile} />
       <img className="background bgdesktop" src={launchbgdesktop} />
-      <div className="step">
+      <div className="step launch">
         <h3>03</h3>
         <h2>SPACE LAUNCH 101</h2>
       </div>
@@ -56,12 +56,14 @@ function Launch() {
             </li>
           </ul>
         </div>
-        <div className="commandername tech">
-          <h4>THE TERMINOLOGY</h4>
-          <h3>{data.technology[technology].name.toUpperCase()}</h3>
-        </div>
-        <div className="commanderdescription techdescription">
-          <p>{data.technology[technology].description}</p>
+        <div className="textcontainer">
+          <div className="commandername tech">
+            <h4>THE TERMINOLOGY</h4>
+            <h3>{data.technology[technology].name.toUpperCase()}</h3>
+          </div>
+          <div className="commanderdescription techdescription">
+            <p>{data.technology[technology].description}</p>
+          </div>
         </div>
       </div>
     </div>

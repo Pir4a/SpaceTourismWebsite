@@ -60,25 +60,19 @@
     width: 100%;
   }
   .navcircles {
-    margin-top: 34px;
+    margin-top: 0;
   }
   .navcircles ul {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
   }
   .navcircles ul li {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: transparent;
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Bellefair", serif;
+    height: 80px;
+    width: 80px;
+    font-size: 32px;
   }
   .navcircles ul li:hover {
     background-color: white;
@@ -87,8 +81,8 @@
 
   .tech h4 {
     font-family: "Barlow Condensed", sans-serif;
-    font-size: 14px;
-    letter-spacing: 2.36px;
+    font-size: 16px;
+    letter-spacing: 2.7px;
     color: #d0d6f9;
   }
   .techdescription {
@@ -106,7 +100,14 @@
     bottom: 101px;
   }
   .leftcontainertechnology {
-    display: grid;
-    grid-template-columns: ;
+    display: flex;
+    align-items: center;
+    padding-top: 222px;
+    gap: 80px;
+    margin-left: 165px;
+    min-height: 600px;
+  }
+  .launch {
+    right: 405px;
   }
 }
