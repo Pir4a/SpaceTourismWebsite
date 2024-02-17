@@ -187,6 +187,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
+    min-width: 620px;
 
     margin-top: 32px;
   }
@@ -196,7 +197,6 @@
   .commandername h3 {
     padding-top: 15px;
     font-size: 56px;
-    min-width: 620px;
   }
   .commanderdescription {
     margin-inline: 0;
@@ -227,7 +227,7 @@
     margin-top: 0;
     height: auto;
     width: auto;
-    max-width: 500px;
+    max-width: 34dvw;
     bottom: 0px;
   }
   .commandername h3 {
@@ -317,5 +317,8 @@
     margin-bottom: 120px;
     min-height: 350px;
     height: auto;
+  }
+  .two {
+    left: -400px;
   }
 }
