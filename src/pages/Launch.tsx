@@ -58,7 +58,7 @@ function Launch() {
         </div>
         <div className="textcontainer">
           <div className="commandername tech">
-            <h4>THE TERMINOLOGY</h4>
+            <h4>THE TERMINOLOGY...</h4>
             <h3>{data.technology[technology].name.toUpperCase()}</h3>
           </div>
           <div className="commanderdescription techdescription">

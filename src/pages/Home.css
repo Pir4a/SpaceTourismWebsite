@@ -63,6 +63,44 @@
   letter-spacing: 1.25px;
   font-size: 20px;
 }
+@media (width>600px) {
+  .hero {
+    max-width: 450px;
+    margin-top: 106px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    text-align: center;
+    margin-inline: auto;
+  }
+  .hero h2 {
+    font-size: 20px;
+    letter-spacing: 3.38px;
+  }
+  .hero h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 172px;
+    font-size: 150px;
+  }
+  .hero p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .circle {
+    width: 242px;
+    height: 242px;
+  }
+  .circle p {
+    color: #0b0d17;
+    font-family: "Bellefair", serif;
+    letter-spacing: 2px;
+    font-size: 32px;
+  }
+}
 @media (width>800px) {
   .homecontainer {
     padding-top: 250px;
