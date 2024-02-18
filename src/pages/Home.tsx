@@ -18,7 +18,11 @@ function Home() {
           experience!
         </p>
       </div>
-      <Link to="/destination" className="circle">
+      <Link
+        style={{ textDecoration: "none" }}
+        to="/destination"
+        className="circle"
+      >
         <p>EXPLORE</p>
       </Link>
     </div>
