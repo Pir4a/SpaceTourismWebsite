@@ -63,6 +63,18 @@
   letter-spacing: 1.25px;
   font-size: 20px;
 }
+.circle:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 88px rgba(255, 255, 255, 0.104);
+  transition: ease-out;
+  transition-duration: 0.15s;
+}
+.circle:visited {
+  text-decoration: none;
+  outline: 0;
+  color: inherit;
+  cursor: auto;
+}
 @media (width>600px) {
   .hero {
     max-width: 450px;

@@ -58,13 +58,15 @@
   padding-bottom: 8px;
   border-bottom: 3px solid transparent;
 }
-.planets ul li:hover {
-  border-bottom: 3px solid white;
+.planets ul .hovered:hover {
+  transition: ease-out;
+  transition-duration: 0.2s;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
-.planets ul li:focus {
-  border-bottom: 3px solid white;
-}
-.planets ul li:target {
+
+.planets ul .target {
+  transition: ease-out;
+  transition-duration: 0.2s;
   border-bottom: 3px solid white;
 }
 .destination {
@@ -305,8 +307,10 @@
     padding-bottom: 8px;
     border-bottom: 3px solid transparent;
   }
-  .planets ul li:hover {
-    border-bottom: 3px solid white;
+  .planets ul .hovered:hover {
+    transition: ease-out;
+    transition-duration: 0.2s;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
   }
   .metrics {
     display: flex;

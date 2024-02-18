@@ -45,13 +45,22 @@ function Launch() {
       <div className="leftcontainertechnology">
         <div className="navcircles">
           <ul>
-            <li className="navcircle" onClick={() => setTechnology(0)}>
+            <li
+              className={technology == 0 ? "navcircle on" : "navcircle"}
+              onClick={() => setTechnology(0)}
+            >
               1
             </li>
-            <li className="navcircle" onClick={() => setTechnology(1)}>
+            <li
+              className={technology == 1 ? "navcircle on" : "navcircle"}
+              onClick={() => setTechnology(1)}
+            >
               2
             </li>
-            <li className="navcircle" onClick={() => setTechnology(2)}>
+            <li
+              className={technology == 2 ? "navcircle on" : "navcircle"}
+              onClick={() => setTechnology(2)}
+            >
               3
             </li>
           </ul>

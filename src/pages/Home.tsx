@@ -1,6 +1,7 @@
 import backgroundmobile from "../assets/home/background-home-mobile.jpg"
 import backgroundesktop from "../assets/home/background-home-desktop.jpg"
 import "./Home.css"
+import { Link } from "react-router-dom"
 
 function Home() {
   return (
@@ -17,9 +18,9 @@ function Home() {
           experience!
         </p>
       </div>
-      <div className="circle">
+      <Link to="/destination" className="circle">
         <p>EXPLORE</p>
-      </div>
+      </Link>
     </div>
   )
 }

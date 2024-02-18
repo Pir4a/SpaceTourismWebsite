@@ -36,10 +36,22 @@ function Crew() {
       <div className="crewrightcontainer">
         <div className="slider">
           <ul>
-            <li className="oval" onClick={() => setCommander(0)}></li>
-            <li className="oval" onClick={() => setCommander(1)}></li>
-            <li className="oval" onClick={() => setCommander(2)}></li>
-            <li className="oval" onClick={() => setCommander(3)}></li>
+            <li
+              className={commander == 0 ? "oval activated" : "oval"}
+              onClick={() => setCommander(0)}
+            ></li>
+            <li
+              className={commander == 1 ? "oval activated" : "oval"}
+              onClick={() => setCommander(1)}
+            ></li>
+            <li
+              className={commander == 2 ? "oval activated" : "oval"}
+              onClick={() => setCommander(2)}
+            ></li>
+            <li
+              className={commander == 3 ? "oval activated" : "oval"}
+              onClick={() => setCommander(3)}
+            ></li>
           </ul>
         </div>
         <div className="commandername">

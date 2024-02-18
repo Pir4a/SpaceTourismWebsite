@@ -35,10 +35,20 @@
   cursor: pointer;
 }
 .navcircles ul li:hover {
-  background-color: white;
-  color: #0b0d17;
+  transition: ease-out;
+  transition-duration: 0.2s;
+  border-color: rgba(255, 255, 255, 1);
+  color: white;
 }
-
+.navcircles ul .on {
+  background-color: white;
+  color: black;
+}
+.navcircles ul .on:hover {
+  transition-duration: 0s;
+  background-color: white;
+  color: black;
+}
 .tech h4 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 14px;
@@ -134,10 +144,6 @@
     width: 80px;
     font-size: 32px;
   }
-  .navcircles ul li:hover {
-    background-color: white;
-    color: #0b0d17;
-  }
 
   .tech h4 {
     font-family: "Barlow Condensed", sans-serif;
@@ -219,10 +225,6 @@
     height: 80px;
     width: 80px;
     font-size: 32px;
-  }
-  .navcircles ul li:hover {
-    background-color: white;
-    color: #0b0d17;
   }
 
   .tech h4 {

@@ -38,16 +38,28 @@ function Destination() {
       <div className="rightcontainer">
         <div className="planets">
           <ul>
-            <li className="target" onClick={() => setPlanet(0)}>
+            <li
+              className={planet == 0 ? "target" : "hovered"}
+              onClick={() => setPlanet(0)}
+            >
               MOON
             </li>
-            <li className="target" onClick={() => setPlanet(1)}>
+            <li
+              className={planet == 1 ? "target" : "hovered"}
+              onClick={() => setPlanet(1)}
+            >
               MARS
             </li>
-            <li className="target" onClick={() => setPlanet(2)}>
+            <li
+              className={planet == 2 ? "target" : "hovered"}
+              onClick={() => setPlanet(2)}
+            >
               EUROPA
             </li>
-            <li className="target" onClick={() => setPlanet(3)}>
+            <li
+              className={planet == 3 ? "target" : "hovered"}
+              onClick={() => setPlanet(3)}
+            >
               TITAN
             </li>
           </ul>
