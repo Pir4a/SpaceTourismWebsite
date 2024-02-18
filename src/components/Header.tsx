@@ -35,7 +35,7 @@ function Header() {
         <nav className="navbar">
           <ul>
             <li
-              id="home"
+              className={underline == "home" ? "borderright" : ""}
               onClick={() => {
                 setUnderline("home"), setIsMenuOpen(false)
               }}
@@ -55,7 +55,7 @@ function Header() {
               <span className={underline == "home" ? "underlined" : ""}></span>
             </li>
             <li
-              id="destination"
+              className={underline == "destination" ? "borderright" : ""}
               onClick={() => {
                 setUnderline("destination"), setIsMenuOpen(false)
               }}
@@ -77,7 +77,7 @@ function Header() {
               ></span>
             </li>
             <li
-              id="crew"
+              className={underline == "crew" ? "borderright" : ""}
               onClick={() => {
                 setUnderline("crew"), setIsMenuOpen(false)
               }}
@@ -97,7 +97,7 @@ function Header() {
               <span className={underline == "crew" ? "underlined" : ""}></span>
             </li>
             <li
-              id="technology"
+              className={underline == "technology" ? "borderright" : ""}
               onClick={() => {
                 setUnderline("technology"), setIsMenuOpen(false)
               }}

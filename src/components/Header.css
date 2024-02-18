@@ -76,7 +76,14 @@
   color: inherit;
   cursor: auto;
 }
+.borderright {
+  border-right: 4px solid white;
+}
+
 @media (width>600px) {
+  .borderright {
+    border-right: none;
+  }
   .navbarcontainer {
     height: 96px;
     background-color: rgba(255, 255, 255, 0.039);
