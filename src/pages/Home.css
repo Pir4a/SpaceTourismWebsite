@@ -123,6 +123,7 @@
   }
   .bgdesktop {
     display: block;
+    min-height: 900px;
   }
   .hero {
     max-width: 450px;
