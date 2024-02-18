@@ -2,7 +2,7 @@ import "./Header.css"
 import logo from "../assets/shared/logo.svg"
 import openmenu from "../assets/shared/icon-hamburger.svg"
 import closemenu from "../assets/shared/icon-close.svg"
-import { useRef, useState } from "react"
+import { useState } from "react"
 import { Link } from "react-router-dom"
 
 function Header() {
