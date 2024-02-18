@@ -7,12 +7,23 @@ import anousheh from "../assets/crew/image-anousheh-ansari.png"
 import { useState } from "react"
 import data from "../data.json"
 import "./Crew.css"
+import { useSwipeable } from "react-swipeable"
 
 function Crew() {
   const [commander, setCommander] = useState(0)
 
+  const handlers = useSwipeable({
+    onSwipedRight: () =>
+      commander == 0 ? setCommander(0) : setCommander(commander - 1),
+    onSwipedLeft: () =>
+      commander == 3 ? setCommander(3) : setCommander(commander + 1),
+    delta: 10,
+    swipeDuration: 500,
+    preventScrollOnSwipe: true,
+    trackMouse: true,
+  })
   return (
-    <div className="crewcontainer">
+    <div {...handlers} className="crewcontainer">
       <img className="background" src={crewbgmobile} />
       <img className="background bgdesktop full" src={crewbgdesktop} />
       <div className="step two">

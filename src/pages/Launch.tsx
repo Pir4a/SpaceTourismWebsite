@@ -9,11 +9,24 @@ import spaceportdesktop from "../assets/technology/image-spaceport-portrait.jpg"
 import spacecapsuledesktop from "../assets/technology/image-space-capsule-portrait.jpg"
 import { useState } from "react"
 import data from "../data.json"
+import { useSwipeable } from "react-swipeable"
 
 function Launch() {
   const [technology, setTechnology] = useState(0)
+
+  const handlers = useSwipeable({
+    onSwipedRight: () =>
+      technology == 0 ? setTechnology(0) : setTechnology(technology - 1),
+    onSwipedLeft: () =>
+      technology == 2 ? setTechnology(2) : setTechnology(technology + 1),
+    delta: 10,
+    swipeDuration: 500,
+    preventScrollOnSwipe: true,
+    trackMouse: true,
+  })
+
   return (
-    <div className="launchcontainer">
+    <div {...handlers} className="launchcontainer">
       <img className="background" src={launchbgmobile} />
       <img className="background bgdesktop" src={launchbgdesktop} />
       <div className="step launch">

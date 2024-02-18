@@ -7,11 +7,21 @@ import titan from "../assets/destination/image-titan.png"
 import mars from "../assets/destination/image-mars.webp"
 import data from "../data.json"
 import { useState } from "react"
+import { useSwipeable } from "react-swipeable"
 
 function Destination() {
   const [planet, setPlanet] = useState(0)
+
+  const handlers = useSwipeable({
+    onSwipedRight: () => (planet == 0 ? setPlanet(0) : setPlanet(planet - 1)),
+    onSwipedLeft: () => (planet == 3 ? setPlanet(3) : setPlanet(planet + 1)),
+    delta: 10,
+    swipeDuration: 500,
+    preventScrollOnSwipe: true,
+    trackMouse: true,
+  })
   return (
-    <div className="destinationcontainer">
+    <div {...handlers} className="destinationcontainer">
       <img className="background" src={destinationbg} />
       <img className="background bgdesktop" src={destinationbgdesktop} />
 
